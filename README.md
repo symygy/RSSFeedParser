@@ -1,14 +1,14 @@
 # RSSFeedParser
-Skrypt sprawdza czy istnieje nowy odcinek podcastu na temat języka Python. Jeśli tak to wysłany zostaje email z powiadomieniem. 
+The script checks if there is a new podcast episode about Python. If so, a notification email will be sent.
 
-Działanie:
-1. Przy pierwszym uruchomieniu skryptu, na dysku tworzony i konfigurowane jest plik bazodanowy 'data.db'
-2. Skrypt zapisuje do niego kilkanaście ostatnich odcinów znalezionych pod adresem: https://talkpython.fm/episodes/rss
-3. Następnie cyklicznie uruchamia się ponowne sprawdzenie czy znaleziono nowy content
-4. Jeśli tak to dane nowego podcastu zostają zapisane do bazy
-5. Tworzony jest email wysyłany na zdefiniowane wcześniej konto z powiadomieniem
-6. Powiadomienie zawiera: Numer odcinka, tytuł a także link do podcastu
+Description:
+1. The first time you run the script, the 'data.db' database file is created and configured on HDD.
+2. The script writes to it last episodes found at: https://talkpython.fm/episodes/rss
+3. Then it starts periodically to check again if new content has been found
+4. If so, the data for the new podcast is saved to the database
+5. An email is created that is sent to the pre-defined account with a notification abount new episode
+6. The notification includes: episode number, title and a podcast link
 
-UWAGA:
-Aby skrypt działał poprawnie wymagane jest uzyskanie kodu autoryzacyjnego dla adresu email Google i wpisanie tych danych do pliku: config.py
+ATTENTION:
+It is required to obtain the authorization code for the Google email address to make script work properly. Enter this data into the file: config.py
 
